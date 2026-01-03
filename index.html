@@ -7,11 +7,10 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"/>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="script.js" defer></script>
     <title>House Fix</title>
   </head>
   <body class="font-manrope bg-white">
@@ -77,7 +76,7 @@
     </header>
     <main>
       <!-- hero section -->
-      <section class="bg-[url('images/Hero-Section.png')] bg-no-repeat bg-center bg-cover min-h-[70vh]">
+      <section class="bg-[url('/images/Hero-Section.png')] bg-no-repeat bg-center bg-cover min-h-[70vh]">
       <!-- <section class="bg-[url('./images/bg.png')] bg-no-repeat bg-center bg-cover min-h-[70vh]"> -->
         <div class="my-container flex items-center justify-center flex-wrap gap-3">
           <article class="pt-10 laptop:pt-0 basis-[636px] text-white">
@@ -479,7 +478,7 @@
             <span class="text-Dark-blue font-bold peer-checked:text-blue">Annual</span>
           </div>
           <div class="flex items-center justify-between gap-5 flex-wrap">
-            <div class="grow w-[370px] bg-white py-5 rounded-sm border-b-4 border-t-4 border-solid border-white hover:border-blue my-transition" data-aos="fade-up" data-aos-delay="200">
+            <div class="grow w-[370px] bg-white py-5 rounded-sm border-b-4 border-t-4 border-solid border-white hover:border-blue" data-aos="fade-up" data-aos-delay="200">
               <div class="pt-5 pr-5 pl-5 pb-10 flex flex-col gap-6 lg:gap-10">
                 <h3 class="text-[24px] text-Dark-blue font-bold">Residential Plumbing</h3>
                 <div><span class="price text-[40px] text-blue font-bold" id="first">$99</span><span class="text-Dark-blue text-[16px] font-extrabold">/Month</span></div>
@@ -512,7 +511,7 @@
                 <a href="#" class="bg-blue text-white font-bold rounded-sm py-4 px-3 w-fit border border-solid border-blue hover:text-Dark-blue hover:bg-white my-transition">Get Started</a>
               </div>
             </div>
-            <div class="grow w-[370px] bg-white py-5 rounded-sm border-b-4 border-t-4 border-solid border-white hover:border-blue my-transition" data-aos="fade-up" data-aos-delay="300">
+            <div class="grow w-[370px] bg-white py-5 rounded-sm border-b-4 border-t-4 border-solid border-white hover:border-blue" data-aos="fade-up" data-aos-delay="300">
               <div class="pt-5 pr-5 pl-5 pb-10 flex flex-col gap-6 lg:gap-10">
                 <h3 class="text-[24px] text-Dark-blue font-bold">Commercial Plumbing</h3>
                 <div><span class="price text-[40px] text-blue font-bold" id="Second">$200</span><span class="text-Dark-blue text-[16px] font-extrabold">/Month</span></div>
@@ -545,7 +544,7 @@
                 <a href="#" class="bg-blue text-white font-bold rounded-sm py-4 px-3 w-fit border border-solid border-blue hover:text-Dark-blue hover:bg-white my-transition">Get Started</a>
               </div>
             </div>
-            <div class="grow w-[370px] bg-white py-5 rounded-sm border-b-4 border-t-4 border-solid border-white hover:border-blue my-transition" data-aos="fade-up" data-aos-delay="400">
+            <div class="grow w-[370px] bg-white py-5 rounded-sm border-b-4 border-t-4 border-solid border-white hover:border-blue" data-aos="fade-up" data-aos-delay="400">
               <div class="pt-5 pr-5 pl-5 pb-10 flex flex-col gap-6 lg:gap-10">
                 <h3 class="text-[24px] text-Dark-blue font-bold">Service & Repair</h3>
                 <div><span class="price text-[40px] text-blue font-bold" id="third">$399</span><span class="text-Dark-blue text-[16px] font-extrabold">/Month</span></div>
@@ -678,7 +677,7 @@
         </div>
       </section>
       <!-- testimonial section -->
-      <!-- <section class="my-container p-[100px]">
+      <section class="my-container p-[100px]">
         <div class="title-container mb-[60px]">
           <h3 class="sub-title">
             Customer Testimonial
@@ -687,10 +686,12 @@
           <h2 class="hedding-title text-[30px] md:text-[40px] leading-12">Our Partner & Customer Give<br> The Best Review For Us</h2>
         </div>
         <div class="slider-container relative">
-          <button type="button" class="left-btn absolute top-[50%] -left-6 cursor-pointer"><img src="./images/chevron-left-btn.svg" alt="chevron-left-btn"></button>
-          <button type="button" class="right-btn absolute top-[50%] -right-6 cursor-pointer"><img src="./images/chevron-right-btn.svg" alt="chevron-right-btn"></button>
-          <div class="testimonial-wrapper w-full flex items-center justify-start gap-8 overflow-x-hidden scroll-smooth">
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+          <button type="button" class="left-btn hidden md:block absolute top-[50%] -left-6 cursor-pointer"><img src="./images/chevron-left-btn.svg" alt="chevron-left-btn"></button>
+          <button type="button" class="right-btn hidden md:block absolute top-[50%] -right-6 cursor-pointer"><img src="./images/chevron-right-btn.svg" alt="chevron-right-btn"></button>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -711,7 +712,9 @@
                 </div>
               </div>
             </div>
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+            </div>
+            <div class="swiper-slide ">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -732,7 +735,9 @@
                 </div>
               </div>
             </div>
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+            </div>
+            <div class="swiper-slide ">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -753,7 +758,9 @@
                 </div>
               </div>
             </div>
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+            </div>
+            <div class="swiper-slide ">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -774,7 +781,9 @@
                 </div>
               </div>
             </div>
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+            </div>
+            <div class="swiper-slide ">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -795,7 +804,9 @@
                 </div>
               </div>
             </div>
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+            </div>
+            <div class="swiper-slide">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -816,7 +827,9 @@
                 </div>
               </div>
             </div>
-            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 px-6 pb-8 border-b-2 border-solid border-blue w-[330px]">
+            </div>
+            <div class="swiper-slide ">
+            <div class="card flex flex-col shrink-0 gap-5 bg-ice-blue pt-10 md:px-6 px-2 pb-8 border-b-2 border-solid border-blue w-[330px]">
               <div class="stars flex gap-2">
                 <img src="./images/star.svg" alt="star">
                 <img src="./images/star.svg" alt="star">
@@ -836,10 +849,14 @@
                   <p class="text-Dark-blue">President of Sales</p>
                 </div>
               </div>
+            </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section> -->
+      </div>
+    </div>
+      </section>
       <!-- Our Partners -->
       <section class="my-container p-[60px]">
         <div class="title-container mb-10 items-start">
@@ -1176,6 +1193,7 @@
           </div>
         </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
       AOS.init();

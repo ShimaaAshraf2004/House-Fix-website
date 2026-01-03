@@ -1,7 +1,6 @@
 const toggleMenuBtn = document.querySelector(".toggle-menu-btn img");
 const menu = document.getElementById("navLinks");
 const links = document.querySelectorAll(".link");
-
 const toggleBtn = document.querySelector(".toggle-btn");
 let firstPrice = document.querySelector("#first");
 let secondPrice = document.querySelector("#Second");
@@ -34,10 +33,6 @@ links.forEach((link) => {
   });
 }) 
 
-
-
-
-
 toggleBtn.addEventListener("click", () => {
   const newFirstPrice = firstPrice.textContent === "$99" ? "$199" : "$99";
   firstPrice.textContent = newFirstPrice;
@@ -63,27 +58,29 @@ filterButtons.forEach((button) => {
   });
 })
 
-
-
-
-
-
-
-
-// const wrapper = document.querySelector(".testimonial-wrapper");
-// const cards = document.querySelectorAll(".card");
-// const leftBtn = document.querySelector(".left-btn");
-// const rightBtn = document.querySelector(".right-btn");
-
-// // حساب عرض الكرت + gap تلقائيًا
-// const cardWidth = cards[0].offsetWidth;
-// const gap = parseInt(window.getComputedStyle(wrapper).gap) || 0;
-// const scrollAmount = cardWidth + gap;
-
-// leftBtn.addEventListener("click", () => {
-//   wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-// });
-
-// rightBtn.addEventListener("click", () => {
-//   wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
-// });
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.right-btn',
+    prevEl: '.left-btn',
+  },
+    breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+  delay: 3000,
+  disableOnInteraction: false,
+  },
+});
