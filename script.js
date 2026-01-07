@@ -81,8 +81,8 @@ new Swiper('.swiper', {
       slidesPerView: 3
     },
   },
-  // autoplay: {
-  // delay: 3000,
-  // disableOnInteraction: false,
-  // },
+  autoplay: {
+  delay: 3000,
+  disableOnInteraction: false,
+  },
 });
