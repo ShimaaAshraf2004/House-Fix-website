@@ -58,11 +58,10 @@ filterButtons.forEach((button) => {
   });
 })
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   direction: 'horizontal',
-  loop: true,
   spaceBetween: 30,
-  slidesPerView: 3,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
@@ -76,11 +75,14 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3
     },
   },
-  autoplay: {
-  delay: 3000,
-  disableOnInteraction: false,
-  },
+  // autoplay: {
+  // delay: 3000,
+  // disableOnInteraction: false,
+  // },
 });
