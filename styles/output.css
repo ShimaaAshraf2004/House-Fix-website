@@ -573,11 +573,20 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\.\/images\/Hero-Section\.png\'\)\] {
+    background-image: url('../images/Hero-Section.png');
+  }
+  .bg-\[url\(\'\.\/images\/Hero-Section\.png\'\)\] {
+    background-image: url('./images/Hero-Section.png');
+  }
   .bg-\[url\(\'\.\/images\/bg\.png\'\)\] {
     background-image: url('./images/bg.png');
   }
   .bg-\[url\(\'\/images\/Hero-Section\.png\'\)\] {
     background-image: url('/images/Hero-Section.png');
+  }
+  .bg-\[url\(\'images\/Hero-Section\.png\'\)\] {
+    background-image: url('images/Hero-Section.png');
   }
   .bg-cover {
     background-size: cover;
