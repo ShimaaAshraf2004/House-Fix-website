@@ -1,16 +1,13 @@
 const toggleMenuBtn = document.querySelector(".toggle-menu-btn img");
 const menu = document.getElementById("navLinks");
 const links = document.querySelectorAll(".link");
-const toggleBtn = document.querySelector(".toggle-btn");
+const check = document.getElementById("check");
 let firstPrice = document.querySelector("#first");
 let secondPrice = document.querySelector("#Second");
 let thirdPrice = document.querySelector("#third");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const galleryItems = document.querySelectorAll(".gallery-item");
-const main = document.querySelector("main");
-const footer = document.querySelector("footer");
-let nums = document.querySelectorAll("#num");
-let serviceYearSection = document.getElementById("service-year");
+
 
 toggleMenuBtn.addEventListener("click", () => {
   toggleMenuBtn.src = toggleMenuBtn.src.includes("images/menu.svg") 
@@ -33,7 +30,8 @@ links.forEach((link) => {
   });
 }) 
 
-toggleBtn.addEventListener("click", () => {
+
+check.addEventListener("change", () => {
   const newFirstPrice = firstPrice.textContent === "$99" ? "$199" : "$99";
   firstPrice.textContent = newFirstPrice;
   const newSecondPrice = secondPrice.textContent === "$200" ? "$250" : "$200";
