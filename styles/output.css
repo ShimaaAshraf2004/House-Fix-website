@@ -226,6 +226,9 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
@@ -252,6 +255,9 @@
   }
   .hidden {
     display: none;
+  }
+  .table {
+    display: table;
   }
   .size-4 {
     width: calc(var(--spacing) * 4);
@@ -340,6 +346,9 @@
   .max-w-\[851px\] {
     max-width: 851px;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
   }
@@ -361,6 +370,9 @@
   .basis-\[636px\] {
     flex-basis: 636px;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .scale-100 {
     --tw-scale-x: 100%;
     --tw-scale-y: 100%;
@@ -372,6 +384,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -396,6 +411,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
@@ -537,6 +555,12 @@
   .bg-\[url\(\'\.\.\/images\/Hero-Section\.png\'\)\] {
     background-image: url('../images/Hero-Section.png');
   }
+  .bg-\[url\(\'\.\.\/images\/ero-Section\.png\'\)\] {
+    background-image: url('../images/ero-Section.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/hero-Section\.png\'\)\] {
+    background-image: url('../images/hero-Section.png');
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -567,6 +591,9 @@
   .p-\[100px\] {
     padding: 100px;
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
@@ -587,6 +614,9 @@
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
@@ -734,6 +764,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .caret-blue {
     caret-color: var(--color-blue);
   }
@@ -743,6 +776,10 @@
   .shadow-\[24px_24px_0_var\(--color-blue\)\] {
     --tw-shadow: 24px 24px 0 var(--tw-shadow-color, var(--color-blue));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -1333,6 +1370,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-content {
   syntax: "*";
   initial-value: "";
@@ -1374,6 +1416,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-content: "";
       --tw-duration: initial;
       --tw-ease: initial;
