@@ -552,14 +552,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\/images\/Hero-Section\.png\'\)\] {
-    background-image: url('../images/Hero-Section.png');
+  .bg-\[url\(\.\.\/images\/hero-section\.png\)\] {
+    background-image: url(../images/hero-section.png);
   }
-  .bg-\[url\(\'\.\.\/images\/ero-Section\.png\'\)\] {
-    background-image: url('../images/ero-Section.png');
+  .bg-\[url\(\.\/images\/hero-section\.png\)\] {
+    background-image: url(./images/hero-section.png);
   }
-  .bg-\[url\(\'\.\.\/images\/hero-Section\.png\'\)\] {
-    background-image: url('../images/hero-Section.png');
+  .bg-\[url\(\/images\/hero-section\.png\)\] {
+    background-image: url(/images/hero-section.png);
+  }
+  .bg-\[url\(images\/hero-section\.png\)\] {
+    background-image: url(images/hero-section.png);
   }
   .bg-cover {
     background-size: cover;
@@ -584,12 +587,6 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .p-\[60px\] {
-    padding: 60px;
-  }
-  .p-\[100px\] {
-    padding: 100px;
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
